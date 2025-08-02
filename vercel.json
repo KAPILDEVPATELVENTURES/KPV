@@ -3,10 +3,6 @@
     {
       "source": "/ashanidhi",
       "destination": "https://asha-nidhi-finance.vercel.app"
-    },
-    {
-      "source": "/ashanidhi/(.*)",
-      "destination": "https://asha-nidhi-finance.vercel.app/$1"
     }
   ]
 }
