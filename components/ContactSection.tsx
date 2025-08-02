@@ -147,7 +147,7 @@ export default function ContactSection() {
                     <a 
                       href="https://www.kapildevpatel.com"
                       target="_blank"
-                      className="text-white font-semibold hover:text-blue-300 transition-colors cursor-pointer text-sm sm:text-base break-all"
+                      className="text-white font-semibold hover:text-blue-300 transition-colors cursor-pointer text-sm sm:text-base break-all" rel="noreferrer"
                     >
                       www.kapildevpatel.com
                     </a>
