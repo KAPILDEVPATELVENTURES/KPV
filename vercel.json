@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/ashanidhi",
-      "destination": "https://asha-nidhi-finance.vercel.app"
-    }
-  ]
-}
