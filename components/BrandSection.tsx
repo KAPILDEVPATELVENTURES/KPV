@@ -15,7 +15,7 @@ const brands = [
   {
     name: "AshaNidhi FINANCE",
     description: "Where Hope Meets Finance",
-    url: "https://www.kapildevpatel.com/ashanidhi",
+    url: "https://asha-nidhi-finance.vercel.app/",
     icon: "ri-hand-heart-line",
     color: "bg-blue-500",
     bgImage: "https://readdy.ai/api/search-image?query=Hope%20and%20finance%20symbolism%20with%20hands%20protecting%20coins%20and%20growing%20plants%2C%20trust%20and%20security%20in%20financial%20services%2C%20warm%20golden%20lighting%2C%20prosperity%20and%20growth%20visualization%2C%20Indian%20cultural%20elements&width=600&height=400&seq=brand2&orientation=landscape"
@@ -84,15 +84,14 @@ export default function BrandSection() {
   }, []);
 
   return (
-    <section 
-      id="brand" 
+    <section
+      id="brand"
       ref={sectionRef}
       className="py-16 sm:py-20 bg-gray-50"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ${
-          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
-        }`}>
+        <div className={`text-center mb-12 sm:mb-16 transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
+          }`}>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
             Our Brand Portfolio
           </h2>
@@ -105,17 +104,16 @@ export default function BrandSection() {
           {brands.map((brand, index) => (
             <div
               key={brand.name}
-              className={`group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden cursor-pointer transform hover:-translate-y-2 ${
-                isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
-              }`}
-              style={{ 
-                transitionDelay: `${index * 100}ms` 
+              className={`group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden cursor-pointer transform hover:-translate-y-2 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
+                }`}
+              style={{
+                transitionDelay: `${index * 100}ms`
               }}
               onClick={() => window.open(brand.url, '_blank')}
             >
               <div className="relative h-40 sm:h-48 overflow-hidden">
-                <img 
-                  src={brand.bgImage} 
+                <img
+                  src={brand.bgImage}
                   alt={brand.name}
                   className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-700"
                 />
@@ -124,7 +122,7 @@ export default function BrandSection() {
                   <i className={`${brand.icon} text-lg sm:text-xl`}></i>
                 </div>
               </div>
-              
+
               <div className="p-4 sm:p-6">
                 <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3 group-hover:text-blue-600 transition-colors duration-300 leading-tight">
                   {brand.name}
@@ -141,9 +139,8 @@ export default function BrandSection() {
           ))}
         </div>
 
-        <div className={`text-center mt-12 sm:mt-16 transition-all duration-1000 delay-700 ${
-          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
-        }`}>
+        <div className={`text-center mt-12 sm:mt-16 transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
+          }`}>
           <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg max-w-4xl mx-auto">
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
               Building Tomorrow's Solutions Today
